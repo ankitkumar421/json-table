@@ -1,0 +1,16 @@
+header{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+    margin: 2%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+table td, table th {
+    border: 1px solid black;
+    text-align: center;
+}

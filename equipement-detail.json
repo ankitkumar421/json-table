@@ -1,0 +1,247 @@
+// {
+//     "machine_data":[
+//         { "name": "Auto Welding Machine",
+//           "machine_id": "machine001",
+//           "energy_consumed": {
+//                                 "today":0,
+//                                 "MTD":0,
+//                                 "YTD":0
+//                              },
+//           "active_power": 0,
+//           "apparent_power": 0,
+//           "reactive_power": 0,
+//           "current": 0,
+//           "voltage": 0,
+//           "power_factor": 0,
+//           "ideal_time": {
+//                             "today":0,
+//                             "MTD":0,
+//                             "YTD":0
+//                         }
+//     },
+
+//     { "name": "Boiler Machine",
+//         "machine_id": "machine002",
+//         "energy_consumed": {
+//                               "today":0,
+//                               "MTD":0,
+//                               "YTD":0
+//                            },
+//         "active_power": 0,
+//         "apparent_power": 0,
+//         "reactive_power": 0,
+//         "current": 0,
+//         "voltage": 0,
+//         "power_factor": 0,
+//         "ideal_time": {
+//                           "today":0,
+//                           "MTD":0,
+//                           "YTD":0
+//                       }
+//   }]
+// }
+
+// {
+//     "table_heading":{
+//         "machine_name" : "Machine Name",
+//         "machine_id": "Machine ID",
+//         "energy_consumed": "Energy Consumed",
+//         "active_power": "Active Power",
+//         "apperant_power": "Apperant Power",
+//         "reactive_power": "Reactive Power",
+//         "current": "Current(Amps)",
+//         "voltage": "Voltage(volts)",
+//         "power_factor": "Power Factor",
+//         "ideal_time": "Ideal Time"
+//     },
+//     "table_sub_heading":{
+//         "machine_name" : "Machine Name",
+//         "machine_id": "Machine ID",
+//         "energy_consumed": "Energy Consumed",
+//         "active_power": "Active Power",
+//         "apperant_power": "Apperant Power",
+//         "reactive_power": "Reactive Power",
+//         "current": "Current(Amps)",
+//         "voltage": "Voltage(volts)",
+//         "power_factor": "Power Factor",
+//         "ideal_time": "Ideal Time"
+//     },
+//     "machine_data": [
+//         {
+//             "name": "Auto Welding Machine",
+//             "machine_id": "machine001",
+//             "energy_consumed": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             },
+//             "active_power": 0,
+//             "apparent_power": 0,
+//             "reactive_power": 0,
+//             "current": 0,
+//             "voltage": 0,
+//             "power_factor": 0,
+//             "ideal_time": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             }
+//         },
+//         {
+//             "name": "Boiler Machine",
+//             "machine_id": "machine002",
+//             "energy_consumed": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             },
+//             "active_power": 0,
+//             "apparent_power": 0,
+//             "reactive_power": 0,
+//             "current": 0,
+//             "voltage": 0,
+//             "power_factor": 0,
+//             "ideal_time": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             }
+//         }
+//     ]
+// }
+
+
+
+
+// //////////////////////////
+
+
+// let tableData = `
+// {
+//     "table_heading":{
+//         "machine_name" : "Machine Name",
+//         "machine_id": "Machine ID",
+//         "energy_consumed": {
+//             "title": "Energy Consumed",
+//             "child": {
+//                 "today": "Today",
+//                 "monthly": "MTD",
+//                 "yearly": "YTD"
+//             }
+//         },
+//         "active_power": "Active Power",
+//         "apperant_power": "Apperant Power",
+//         "reactive_power": "Reactive Power",
+//         "current": "Current(Amps)",
+//         "voltage": "Voltage(volts)",
+//         "power_factor": "Power Factor",
+//         "ideal_time": {
+//             "title": "Ideal Time",
+//             "child": {
+//                 "today": "Today",
+//                 "monthly": "MTD",
+//                 "yearly": "YTD"
+//             }
+//         }
+//     },
+//     "machine_data": [
+//         {
+//             "name": "Auto Welding Machine",
+//             "machine_id": "machine001",
+//             "energy_consumed": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             },
+//             "active_power": 0,
+//             "apparent_power": 0,
+//             "reactive_power": 0,
+//             "current": 0,
+//             "voltage": 0,
+//             "power_factor": 0,
+//             "ideal_time": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             }
+//         },
+//         {
+//             "name": "Boiler Machine",
+//             "machine_id": "machine002",
+//             "energy_consumed": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             },
+//             "active_power": 0,
+//             "apparent_power": 0,
+//             "reactive_power": 0,
+//             "current": 0,
+//             "voltage": 0,
+//             "power_factor": 0,
+//             "ideal_time": {
+//                 "today":0,
+//                 "MTD":0,
+//                 "YTD":0
+//             }
+//         }
+//     ]
+// }
+// `;
+
+
+
+[
+    {
+        "name": "Auto Welding Machine",
+        "machine_id": "machine001",
+        "energy_consumed": {
+            "title": "Energy Consumed",
+            "child": {
+                "Today": 0,
+                "MTD": 0,
+                "YTD": 0
+            }
+        },
+        "active_power": 0,
+        "apparent_power": 0,
+        "reactive_power": 0,
+        "current": 0,
+        "voltage": 0,
+        "power_factor": 0,
+        "ideal_time": {
+            "title": "Ideal Time",
+            "child": {
+                "Today": 0,
+                "MTD": 0,
+                "YTD": 0
+            }
+        }
+    },
+    {
+        "name": "Boiler Machine",
+        "machine_id": "machine002",
+        "energy_consumed": {
+            "title": "Energy Consumed",
+            "child": {
+                "Today": 0,
+                "MTD": 0,
+                "YTD": 0
+            }
+        },
+        "active_power": 0,
+        "apparent_power": 0,
+        "reactive_power": 0,
+        "current": 0,
+        "voltage": 0,
+        "power_factor": 0,
+        "ideal_time": {
+            "title": "Ideal Time",
+            "child": {
+                "Today": 0,
+                "MTD": 0,
+                "YTD": 0
+            }
+        }
+    }
+]
